@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'segoe';
+    src: url('../assets/Fonts/SEGOEUI.TTF');
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: clamp(80%, 75rem, 95%);
+    margin: 35px auto 0px;
+}
+
+.search{
+    padding: 0.5rem 1.25rem;
+    border-radius: 25px;
+    border: 1px solid #707070;
+    outline: none;
+    color: black;
+    font-size: 0.95rem;
+}
+
+.search::placeholder{
+    color: black;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: Arial;
+}
+
+.icon{
+    position: absolute;
+    right: 0.95rem;
+    bottom : 50%;
+    transform: translateY(50%);
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+.login{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 0.315rem;
+}
+
+.button{
+    border: none;
+    color: white;
+    background-color: #FC4E4E;
+    border-radius: 15px;
+    padding: 0.315rem 1.15rem;
+    font-family: 'segoe';
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:not(:last-child){
+    margin-right: 0.7rem;
+}
+
+.select{
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.logout{
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.logout:hover{
+    color: #FC4E4E;
+    cursor: pointer;
+}
+
+@media screen and(max-width: 620px) {
+    .row {
+        flex-direction: column;
+    }
+}

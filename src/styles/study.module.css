@@ -1,0 +1,24 @@
+.questions{
+    display: flex;
+    flex-direction: column;
+    width: clamp(80%, 1200px, 95%);
+}
+
+.label{
+    display: block;
+    margin-top: 30px;
+    font-size: 0.95rem;
+}
+
+.select{
+    border-radius: 3px;
+    margin-top: 5px;
+    outline: none;
+    color: #868E96;
+    border-color: #868E96;
+    width: clamp(50%, 550px, 90%);
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+

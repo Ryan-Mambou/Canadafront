@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'segoe';
+    src: url('../assets/Fonts/SEGOEUI.TTF');
+}
+
+.indication_container{
+    width: clamp(80%, 1200px, 95%);
+    margin-top: 5px;
+    font-family: 'segoe';
+}
+
+.indication{
+    color: #707070;
+    width: 100%;
+    font-size: 1.7rem;
+}
+
+.hr{
+    border: none;
+    height: 1.5px;
+    background-color: #707070;
+    
+}

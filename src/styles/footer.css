@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'segoe';
+    src: url('../assets/Fonts/SEGOEUI.TTF');
+}
+
+.footer{
+    width: 100%;
+    background-color: #FC4E4E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: -150px;
+}
+
+.footer_top{
+    display: flex;
+    width: clamp(80%, 1200px, 95%);
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer_links{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    font-family: 'segoe';
+}
+
+.footer_link:not(:first-child){
+    padding: 0px 15px;
+}
+
+.footer_icon{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.footer_icon:not(:last-child){
+    margin-right: 15px;
+}
+
+#copyright{
+    margin-top: 20px;
+    width: clamp(80%, 1200px, 95%);
+    margin-bottom: 15px;
+}

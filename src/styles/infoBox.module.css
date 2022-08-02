@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'segoe';
+    src: url('../assets/Fonts/SEGOEUI.TTF');
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #707070;
+    width: clamp(80%, 1200px, 95%);
+    padding: 20px 10px;
+    margin-top: 10px;
+    min-height: 228px;
+    word-break: break-word;
+}
+
+.heading{
+    color: #707070;
+    font-family: 'segoe';
+}
+
+.content{
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #707070;
+    font-weight: 500;
+}
+
+.warning{
+    color: #FF0000;
+    margin-top: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: 'segoe';
+    font-size: 1.5rem;
+}

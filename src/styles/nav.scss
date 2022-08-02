@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'segoe';
+    src: url('../assets/Fonts/SEGOEUI.TTF');
+}
+
+.nav{
+    display: flex;
+    width: clamp(80%, 1190px, 95%);
+    justify-content: space-between;
+    font-family: 'segoe';
+    font-size: 1.07rem;
+    letter-spacing: 0.05rem;
+    margin: 35px auto 0px;
+    position: relative;
+}
+
+.nav a {
+    cursor: pointer;
+    color: #707070;
+    padding: 1px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+} 
+
+.nav a.active{
+    background-color: #FF0000;
+    color: white;
+}
+
+.navLinks:hover{
+    background-color: #FC4E4E;
+    color: white;
+}
+
+.hamburger{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    right: 5px;
+    bottom: 0px;
+    color: black; 
+    position: absolute;
+    bottom: 0px;
+}
+
+.close{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    right: 20px;
+    bottom: 10px;
+    color: white; 
+    position: absolute;
+    top: 20px;
+}
+
+@keyframes menuAppear {
+    from{
+        transform: translateY(-300%);
+    }
+    to{
+        transform: translateY(-5.5%);
+    }
+}
+
+@media screen and(max-width: 1020px){
+
+    .nav a{
+        display: none;
+    }
+
+    #nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        animation: menuAppear 1.5s ease forwards;
+        background: rgba(0,0,0,0.9);
+        z-index: 1;
+        justify-content: center;
+
+        a{
+            padding: 25px;
+            display: block;
+        }
+
+        .close{
+            display: block;
+            color: white;
+            top: 10px;
+            }
+    }
+
+    
+    .hamburger{
+        display: block;
+        color: black;
+        }
+
+
+}

@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'segoe';
+    src: url('../assets/Fonts/SEGOEUI.TTF');
+}
+
+@font-face {
+    font-family: 'nueve';
+    src: url('../assets/Fonts/HelveticaNeue.ttf');
+}
+
+
+.heading{
+    color: #707070;
+    width: clamp(80%, 1150px, 95%);
+    margin-top: 25px;
+    font-family: 'segoe';
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: clamp(80%, 1150px, 95%);
+    justify-content: flex-start;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: clamp(50%, 600px, 100%);
+    align-items: center;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 8px;
+}
+
+.row{
+    margin-top: 25px;
+}
+
+.right, .left{
+display: flex;
+flex-direction: column;
+}
+
+.error{
+    color: red;
+    font-size: 0.9rem;
+}
+
+.label{
+    display: block;
+    font-size: 0.9rem;
+}
+
+.input{
+    border: 1px solid #E0E0E0;
+    padding: 6px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    margin-top: 3px;
+    outline: none;
+    width: 260px;
+}
+
+.textArea{
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    margin-top: 3px;
+    outline: none;
+    width: calc(100%);
+    padding: 10px;
+    height: 150px;
+    resize: none;
+}
+
+.button{
+    border: none;
+    margin-top: 40px;
+    color: white;
+    padding: 4px 25px;
+    background-color: #FC4E4E;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'segoe';
+    line-height: 1;
+    font-size: 1.1rem;
+}
+
+/**For contact page */
+.questionButton{
+    border: none;
+    margin-top: 10px;
+    color: white;
+    padding: 10px 25px;
+    background-color: #FC4E4E;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'segoe';
+    line-height: 1;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    align-self: flex-end;
+    width: 100%;
+}
+
+
+.font{
+    font-family: 'segoe';
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 620px) {
+    .row {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .right{
+        margin-top: 15px;
+    }
+
+    .input{
+        width: 85%;
+    }
+}
