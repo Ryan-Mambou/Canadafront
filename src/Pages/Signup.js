@@ -12,8 +12,10 @@ function Signup() {
 
     const navigate = useNavigate();
 
+    /** 
     axios.defaults.baseURL = process.env.REACT_APP_API_URL;
-    console.log(process.env.REACT_APP_API_URL);
+    console.log(process.env.REACT_APP_API_URL); 
+    */
 
   return (
     <div className='App'>
@@ -39,7 +41,7 @@ function Signup() {
                 .required("Required"),
             })}
             onSubmit={(values, {setSubmitting}) => {
-                axios.post('/api/auth/signup', values)
+                axios.post('https://candaback.herokuapp.com/api/auth/signup', values)
                 .then(res => {
                     if (res.data.message === 'New user added'){
                         navigate('/login')

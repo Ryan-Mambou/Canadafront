@@ -22,7 +22,7 @@ function Login() {
                 password: Yup.string().required('Required'),
             })}
             onSubmit={(values, {setSubmitting}) => {
-              axios.post('/api/login', values)
+              axios.post('https://candaback.herokuapp.com/api/auth/login', values)
               .then(res => {
                 if (res.data.hasOwnProperty('token')){
                   navigate(`/`);
