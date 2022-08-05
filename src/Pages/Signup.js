@@ -38,7 +38,7 @@ function Signup() {
                 .required("Required"),
             })}
             onSubmit={(values, {setSubmitting}) => {
-                axios.post('/auth/signup', values)
+                axios.post('/api/auth/signup', values)
                 .then(res => {
                     if (res.data.message === 'New user added'){
                         navigate('/login')
