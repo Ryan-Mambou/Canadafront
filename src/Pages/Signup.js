@@ -9,7 +9,11 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function Signup() {
+
     const navigate = useNavigate();
+
+    axios.defaults.baseURL = process.env.REACT_APP_API_URL
+
   return (
     <div className='App'>
         <h2 className={styles.heading}>Create your account</h2>
@@ -34,7 +38,7 @@ function Signup() {
                 .required("Required"),
             })}
             onSubmit={(values, {setSubmitting}) => {
-                axios.post('http://localhost:3000/api/auth/signup', values)
+                axios.post('/auth/signup', values)
                 .then(res => {
                     if (res.data.message === 'New user added'){
                         navigate('/login')

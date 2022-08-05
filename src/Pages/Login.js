@@ -22,7 +22,7 @@ function Login() {
                 password: Yup.string().required('Required'),
             })}
             onSubmit={(values, {setSubmitting}) => {
-              axios.post('http://localhost:3000/api/auth/login', values)
+              axios.post('/login', values)
               .then(res => {
                 if (res.data.hasOwnProperty('token')){
                   navigate(`/`);
