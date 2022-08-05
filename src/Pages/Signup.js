@@ -12,7 +12,8 @@ function Signup() {
 
     const navigate = useNavigate();
 
-    axios.defaults.baseURL = process.env.REACT_APP_API_URL
+    axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+    console.log(process.env.REACT_APP_API_URL);
 
   return (
     <div className='App'>
